@@ -1,7 +1,9 @@
-# API
 @password=${$env PASSWORD}
+@userId=2  # 👈 เปลี่ยนเป็น user id ที่ต้องการ
+
 ### Getting all users
 GET http://localhost:8080/api/users
+
 ### Create api user
 POST http://localhost:8080/api/auth/local/register
 Content-Type: application/json
@@ -11,3 +13,15 @@ Content-Type: application/json
     "email": "kittithat-kh@rmutp.ac.th",
     "password": "{{password}}"
 }
+
+### Update user by ID
+PUT http://localhost:8080/api/users/{{userId}}
+Content-Type: application/json
+
+{
+    "username": "Kittithat Khunklangsaeng (Updated)",
+    "email": "kittithat-kh-update@rmutp.ac.th"
+}
+
+### Delete user by ID
+DELETE http://localhost:8080/api/users/{{userId}}
