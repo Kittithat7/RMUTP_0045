@@ -1,0 +1,13 @@
+# API
+
+### Getting all users
+GET http://localhost:8080/api/users
+### Create api user
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "username": "Kittithat7",
+    "email": "user@strapi.io",
+    "password": "strapiPassword"
+}
