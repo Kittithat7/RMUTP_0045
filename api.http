@@ -1,13 +1,13 @@
 # API
-
+@password=${$env PASSWORD}
 ### Getting all users
 GET http://localhost:8080/api/users
 ### Create api user
-POST http://localhost:8080/api/users
+POST http://localhost:8080/api/auth/local/register
 Content-Type: application/json
 
 {
-    "username": "Kittithat7",
-    "email": "user@strapi.io",
-    "password": "strapiPassword"
+    "username": "Kittithat khunklangsaeng",
+    "email": "kittithat-kh@rmutp.ac.th",
+    "password": "{{password}}"
 }
