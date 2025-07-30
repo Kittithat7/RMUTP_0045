@@ -26,4 +26,4 @@ Content-Type: application/json
 }
 
 ### Delete user by ID
-DELETE http://localhost:8080/api/users/{{userId}}xxxxxxxxxxxxxxxx
+DELETE http://localhost:8080/api/users/{{userId}}
